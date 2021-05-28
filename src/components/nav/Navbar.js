@@ -143,7 +143,7 @@ const Navbar = () => {
   return (
     <>
       <Nav>
-        <NavBrand>
+        <NavBrand className="animate__animated animate__fadeInDown animate__slow ">
           <Link to="/">
             <NavBrandImg src={Brand} alt="TESLA" />
           </Link>
@@ -151,7 +151,10 @@ const Navbar = () => {
         <NavMenu className="center">
           {[...topItems].map((item, index) => {
             return (
-              <NavMenuItem key={index}>
+              <NavMenuItem
+                className="animate__animated animate__fadeInDown  animate__delay-2s"
+                key={index}
+              >
                 <Link to={item.path}> {item.title} </Link>
               </NavMenuItem>
             );
@@ -160,7 +163,12 @@ const Navbar = () => {
         <NavMenu>
           {[...others].map((item, index) => {
             return (
-              <NavMenuItem key={index}>
+              <NavMenuItem
+                className="animate__animated
+                animate__fadeInDown
+                animate__delay-3s"
+                key={index}
+              >
                 <Link to={item.path}> {item.icon} </Link>
               </NavMenuItem>
             );

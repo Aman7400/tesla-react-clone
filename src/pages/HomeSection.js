@@ -32,7 +32,7 @@ const HomeSection = (props) => {
       <ModelImage src={props.src} />
       <Actions className="center">
         <button className="btn  btn-dark m-1">Custom Inventory</button>
-        <button className="btn  btn-outline-dark m-1">
+        <button className="btn  btn-outline-light  m-1">
           Existing Inventory
         </button>
       </Actions>
